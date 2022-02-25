@@ -30,4 +30,5 @@ const company = {
         }
     },
 }
-console.log(company.web.tech.third);
+console.log(company?.web?.tech?.third);
+console.log(company?.webAss?.tech.third);
