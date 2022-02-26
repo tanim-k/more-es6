@@ -1,7 +1,7 @@
 class Support {
     name;
     designation='support Web Dev';
-    address = 'bd';
+    address;
     constructor(name, address) {
         this.name = name;
         this.address = address;
@@ -16,4 +16,4 @@ const sharuk = new Support('sharuk khan','mumbai');
 amir.startSession();
 salman.startSession();
 sharuk.startSession();
-// console.log(amir, salman, sharuk);
+console.log(amir, salman, sharuk);
