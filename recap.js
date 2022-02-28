@@ -9,7 +9,7 @@ function maxNumber(array = []) {
     const max = Math.max(...array);
     return max;
 }  
-const biggest = maxNumber();
+const biggest = maxNumber([23,4343,4512,12123,324,4343]);
 console.log(biggest); 
 // arrow function 
 // function square(x) {
