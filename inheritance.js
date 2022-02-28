@@ -23,13 +23,11 @@ class StudentCare extends TeamMember{
     }
 }
 // neptun class 
-class NeptuneDev {
-    name;
-    designation = 'student care web dev';
-    address= 'bd';
-    constructor(name, address) {
-        this.name = name;
-        this.address = address;
+class NeptuneDev extends TeamMember {
+    codeEditor;
+    constructor(name, address, editor){
+        super(name, address)
+        this.codeEditor = editor;
     }
     releseApp(version){
         console.log(this.name, 'app version', version)
@@ -41,4 +39,6 @@ const sharuk = new Support('sharuk khan','mumbai', '1pm');
 
 // using class 
 const alia = new StudentCare('alia', 'mumbai');
-console.log(amir);
+const bash = new NeptuneDev('bash', 'gram', 'android studio');
+bash.releseApp('1.5.76');
+console.log(bash);
